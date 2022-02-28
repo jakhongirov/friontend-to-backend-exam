@@ -1,38 +1,114 @@
-.App {
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  width: 390px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  box-shadow: 10px 10px 15px #333;
+}
+
+.header__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  margin: 0;
+  margin-right: 20px;
+}
+
+select {
+  width: 150px;
+  padding: 10px;
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgba(138, 138, 138, 0.8);
 }
 
-.App-link {
-  color: #61dafb;
+.modal__item {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal__item {
+  position: fixed;
+  display: block;
+  width: 300px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.modal__close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -15px;
+  right: -10%;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: blue;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.modal__close:active {
+  opacity: 0.8;
+  color: green;
+}
+
+input {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  background: orange;
+  border: none;
+  border-radius: 10px;
 }
